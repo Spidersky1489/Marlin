@@ -1656,10 +1656,15 @@
 #define PREHEAT_2_TEMP_BED 90
 #define PREHEAT_2_FAN_SPEED 0 // Value from 0 to 255
 
-#define PREHEAT_3_LABEL "ABS"
-#define PREHEAT_3_TEMP_HOTEND 245
-#define PREHEAT_3_TEMP_BED 90
+#define PREHEAT_3_LABEL "PLA+"
+#define PREHEAT_3_TEMP_HOTEND 215
+#define PREHEAT_3_TEMP_BED 60
 #define PREHEAT_3_FAN_SPEED 0 // Value from 0 to 255
+
+#define PREHEAT_4_LABEL "ABS"
+#define PREHEAT_4_TEMP_HOTEND 255
+#define PREHEAT_4_TEMP_BED 90
+#define PREHEAT_4_FAN_SPEED 0 // Value from 0 to 255
 
 /**
  * Nozzle Park
