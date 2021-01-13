@@ -850,8 +850,8 @@
  *   https://blog.kyneticcnc.com/2018/10/computing-junction-deviation-for-marlin.html
  */
 #if DISABLED(CLASSIC_JERK)
-#define JUNCTION_DEVIATION_MM 0.067 // (mm) Distance from real junction edge
-#define JD_HANDLE_SMALL_SEGMENTS    // Use curvature estimation instead of just the junction angle \
+#define JUNCTION_DEVIATION_MM 0.05 // (mm) Distance from real junction edge
+#define JD_HANDLE_SMALL_SEGMENTS   // Use curvature estimation instead of just the junction angle \
                                     // for small segments (< 1mm) with large junction angles (> 135°).
 #endif
 
@@ -1031,7 +1031,7 @@
  */
 #define NOZZLE_TO_PROBE_OFFSET \
   {                            \
-    0, -36, 0                  \
+    10, -36, 0                 \
   }
 
 // Most probes should stay away from the edges of the bed, but
@@ -1039,10 +1039,10 @@
 #define PROBING_MARGIN 10
 
 // X and Y axis travel speed (mm/min) between probes
-#define XY_PROBE_SPEED (200 * 60)
+#define XY_PROBE_SPEED (250 * 60)
 
 // Feedrate (mm/min) for the first approach when double-probing (MULTIPLE_PROBING == 2)
-#define Z_PROBE_SPEED_FAST (4 * 60)
+#define Z_PROBE_SPEED_FAST (8 * 60)
 
 // Feedrate (mm/min) for the "accurate" probe of each point
 #define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 8)
