@@ -1216,8 +1216,8 @@
 #if ENABLED(LCD_PROGRESS_BAR)
 #define PROGRESS_BAR_BAR_TIME 2000 // (ms) Amount of time to show the bar
 #define PROGRESS_BAR_MSG_TIME 3000 // (ms) Amount of time to show the status message
-#define PROGRESS_MSG_EXPIRE 0      // (ms) Amount of time to retain the status message (0=forever)
-                                   //#define PROGRESS_MSG_ONCE         // Show the message for MSG_TIME then clear it
+#define PROGRESS_MSG_EXPIRE 0      // (ms) Amount of time to retain the status message (0=forever)                    \
+                                   //#define PROGRESS_MSG_ONCE         // Show the message for MSG_TIME then clear it \
                                    //#define LCD_PROGRESS_BAR_TEST     // Add a menu item to test the progress bar
 #endif
 #endif
@@ -1510,12 +1510,12 @@
 #define STATUS_HOTEND_INVERTED // Show solid nozzle bitmaps when heating (Requires STATUS_HOTEND_ANIM)
 #define STATUS_HOTEND_ANIM     // Use a second bitmap to indicate hotend heating
 #define STATUS_BED_ANIM        // Use a second bitmap to indicate bed heating
-#define STATUS_CHAMBER_ANIM    // Use a second bitmap to indicate chamber heating
-                               //#define STATUS_CUTTER_ANIM        // Use a second bitmap to indicate spindle / laser active
-                               //#define STATUS_ALT_BED_BITMAP     // Use the alternative bed bitmap
-                               //#define STATUS_ALT_FAN_BITMAP     // Use the alternative fan bitmap
-                               //#define STATUS_FAN_FRAMES 3       // :[0,1,2,3,4] Number of fan animation frames
-                               //#define STATUS_HEAT_PERCENT       // Show heating in a progress bar
+#define STATUS_CHAMBER_ANIM    // Use a second bitmap to indicate chamber heating                                            \
+                               //#define STATUS_CUTTER_ANIM        // Use a second bitmap to indicate spindle / laser active \
+                               //#define STATUS_ALT_BED_BITMAP     // Use the alternative bed bitmap                         \
+                               //#define STATUS_ALT_FAN_BITMAP     // Use the alternative fan bitmap                         \
+                               //#define STATUS_FAN_FRAMES 3       // :[0,1,2,3,4] Number of fan animation frames            \
+                               //#define STATUS_HEAT_PERCENT       // Show heating in a progress bar                         \
                                //#define BOOT_MARLIN_LOGO_ANIMATED // Animated Marlin logo. Costs ~‭3260 (or ~940) bytes of PROGMEM.
 
 // Frivolous Game Options
