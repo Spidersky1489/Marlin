@@ -763,7 +763,7 @@
  */
 #define DEFAULT_AXIS_STEPS_PER_UNIT \
   {                                 \
-    80, 80, 400, 500                \
+    80, 80, 400, 415                \
   }
 
 /**
@@ -1425,7 +1425,7 @@
 
 // Beyond the probed grid, continue the implied tilt?
 // Default is to maintain the height of the nearest edge.
-//#define EXTRAPOLATE_BEYOND_GRID
+#define EXTRAPOLATE_BEYOND_GRID
 
 //
 // Experimental Subdivision of the grid by Catmull-Rom method.
